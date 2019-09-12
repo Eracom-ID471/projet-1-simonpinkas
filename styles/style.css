@@ -1,7 +1,323 @@
-h1 {
-  font-size: 2rem;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-h2 {
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgba(21, 16, 26, 1);
+}
+
+a {
+  background-color: purple;
+  border: 1px black solid;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+
+.hero {
+  align-items: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 4rem 2rem;
+}
+
+.hero>* {
+  color: white;
+}
+
+.hero>h1 {
+  color: purple;
   font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.hero>article>p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.hero>article>a {
+  padding: 1rem;
+  margin-top: .75rem;
+}
+
+.tracklist {
+  padding: 2rem;
+}
+
+
+
+.tracklist>ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 1rem;
+}
+
+.tracklist>ul>li {}
+
+.tracklist>ul>li>figure {
+  max-height: 600px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+}
+
+.tracklist>ul>li>figure:hover>img {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.tracklist>ul>li>figure:hover>figcaption>h3 {
+  color: white;
+}
+
+.tracklist>ul>li>figure:hover>.button-container {
+}
+
+.tracklist>ul>li>figure:hover>.button-container>button {
+  background: purple;
+  color: white;
+}
+
+.tracklist>ul>li>figure>img {
+  width: 100%;
+  transition: 0.3s;
+
+}
+
+.tracklist>ul>li>figure>figcaption {
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  width: 100%;
+}
+
+.tracklist>ul>li>figure>figcaption>h3 {
+  color: transparent;
+  padding: .75rem;
+  font-size: 2rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.tracklist>ul>li>figure>.button-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  transition: 0.3s;
+
+
+}
+
+.tracklist>ul>li>figure>.button-container>button {
+  background-color: transparent;
+  border: transparent solid 1px;
+  color: transparent;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+
+.tracklist>ul>li>p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: white;
+  display: none;
+}
+
+.tracklist>ul>li>a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  padding: .75rem;
+  color: white;
+  text-align: center;
+  font-size: .75rem;
+}
+
+
+@media only screen and (min-width: 694px) {
+  .hero {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  }
+
+  .hero>h1 {
+    font-size: 6rem;
+  }
+
+  .hero>article>p {
+    font-size: 1.5rem;
+  }
+
+  .tracklist>ul {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  }
+
+  .tracklist>ul>li>figure>figcaption>h3 {
+    font-size: 5rem;
+  }
 }
