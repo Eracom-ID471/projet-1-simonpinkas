@@ -225,12 +225,16 @@ a {
   color: white;
 }
 
-.tracklist>ul>li>figure:hover>.button-container {
-}
+.tracklist>ul>li>figure:hover>.button-container {}
 
-.tracklist>ul>li>figure:hover>.button-container>button {
+.tracklist>ul>li>figure:hover>.button-container>a {
+  margin-bottom: 1rem;
   background: purple;
   color: white;
+}
+
+.tracklist>ul>li>figure:hover>.button-container>audio {
+  opacity: 100;
 }
 
 .tracklist>ul>li>figure>img {
@@ -264,7 +268,7 @@ a {
 
 }
 
-.tracklist>ul>li>figure>.button-container>button {
+.tracklist>ul>li>figure>.button-container>a {
   background-color: transparent;
   border: transparent solid 1px;
   color: transparent;
@@ -275,6 +279,14 @@ a {
   font-size: 16px;
   transition: 0.3s;
 }
+
+
+.tracklist>ul>li>figure>.button-container>audio {
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+}
+
 
 
 .tracklist>ul>li>p {
@@ -299,6 +311,27 @@ footer {
   font-size: .75rem;
 }
 
+#animatedModal {
+  background-color: purple !important;
+}
+
+#animatedModal>.close-animatedModal>img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  padding: 1rem;
+}
+
+#animatedModal>.modal-content>p {
+  margin: 0 auto;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
 
 @media only screen and (min-width: 694px) {
   .hero {
@@ -306,7 +339,7 @@ footer {
   }
 
   .hero>h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .hero>article>p {
@@ -318,6 +351,6 @@ footer {
   }
 
   .tracklist>ul>li>figure>figcaption>h3 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }

@@ -13,6 +13,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+
 </head>
 
 <body>
@@ -25,79 +27,100 @@
   </section>
   <section class="tracklist" id="tracklist">
     <ul>
+
+
       <li>
         <figure>
-          <img src="img/1.jpg" alt="Several hands holding beer glasses">
+          <img src="img/1.jpg">
           <figcaption>
             <h3>That's Just the Way That I Feel</h3>
-           
-           
+
+
           </figcaption>
           <div class="button-container">
-              <button class="button">Lyrics</button>
-              <button class="button">Listen</button>
+            <a class="lyics-button" id="demo01" href="#animatedModal">Lyrics</a>
+
+            <audio controls>
+              <source src="audio/01.mp3" type="audio/mp3">
+              <!-- <source src="horse.mp3" type="audio/mpeg"> -->
+              Your browser does not support the audio element.
+            </audio>
           </div>
         </figure>
-        <p>
-          [Verse 1]
-          Well, I don't like talkin’ to myself
-          But someone's gotta say it, hell
-          I mean, things have not been going well
-          This time I think I finally fucked myself
-          You see, the life I live is sickening
-          I spent a decade playing chicken with oblivion
-          Day to day, I'm neck and neck with giving in
-          I’m the same old wreck I've always been
+        <div id="animatedModal">
+          <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+          <div class="close-animatedModal">
+            <img src="img/close.png">
+          </div>
+          <div class="modal-content">
+            <p>
 
-          [Chorus]
-          And when I see her in the park
-          It barely merits a remark
-          How we stand the standard distance
-          Distant strangers stand apart
+              [Verse 1]</br>
+              Well, I don't like talkin’ to myself</br>
+              But someone's gotta say it, hell</br>
+              I mean, things have not been going well</br>
+              This time I think I finally fucked myself</br>
+              You see, the life I live is sickening</br>
+              I spent a decade playing chicken with oblivion</br>
+              Day to day, I'm neck and neck with giving in</br>
+              I’m the same old wreck I've always been</br>
+            </p>
+            <p>
+              [Chorus]</br>
+              And when I see her in the park</br>
+              It barely merits a remark</br>
+              How we stand the standard distance</br>
+              Distant strangers stand apart</br>
+            </p>
+            <p>
+              [Verse 2]</br>
+              Course I've been humbled by the void</br>
+              Much of my faith has been destroyed</br>
+              I've been forced to watch my foes enjoy</br>
+              Ceaseless feasts of schadenfreude</br>
+              And as the pace of life keeps quickening</br>
+              Beneath the bitching and the bickering</br>
+              When I try to drown my thoughts in gin</br>
+              I find my worst ideas know how to swim</br>
+            </p>
+            <p>[Chorus]</br>
+              Well, a setback can be a setup</br>
+              For a comeback if you don't let up</br>
+              But this kind of hurtin' won't heal</br>
+              And the end of all wanting</br>
+              Is all I've been wanting</br>
+              And that’s just the way that I feel</br>
+            </p>
 
-          [Verse 2]
-          Course I've been humbled by the void
-          Much of my faith has been destroyed
-          I've been forced to watch my foes enjoy
-          Ceaseless feasts of schadenfreude
-          And as the pace of life keeps quickening
-          Beneath the bitching and the bickering
-          When I try to drown my thoughts in gin
-          I find my worst ideas know how to swim
-
-
-          [Chorus]
-          Well, a setback can be a setup
-          For a comeback if you don't let up
-          But this kind of hurtin' won't heal
-          And the end of all wanting
-          Is all I've been wanting
-          And that’s just the way that I feel
-
-          [Verse 3]
-          I met failure in Australia
-          I fell ill in Illinois
-          I nearly lost my genitalia
-          To an anthill in Des Moines
-          I was so far gone in Fargo
-          South Dakota got annoyed
-          That’s the shit I'm talkin’ 'bout
-          When I talk to you about
-          Ceaseless feasts of schadenfreude
-
-          [Chorus]
-          And a setback can be a setup
-          For a comeback if you don't let up
-          But this kind of hurtin' won’t heal
-          And the end of all wanting
-          Is all I've been wanting
-          The end of all wanting
-          Is all I've been wanting
-          The end of all wanting
-          Is all I've been wanting
-          And that's just the way that I feel
-        </p>
+            <p>[Verse 3]</br>
+              I met failure in Australia</br>
+              I fell ill in Illinois</br>
+              I nearly lost my genitalia</br>
+              To an anthill in Des Moines</br>
+              I was so far gone in Fargo</br>
+              South Dakota got annoyed</br>
+              That’s the shit I'm talkin’ 'bout</br>
+              When I talk to you about</br>
+              Ceaseless feasts of schadenfreude</br>
+            </p>
+            <p>
+              [Chorus]</br>
+              And a setback can be a setup</br>
+              For a comeback if you don't let up</br>
+              But this kind of hurtin' won’t heal</br>
+              And the end of all wanting</br>
+              Is all I've been wanting</br>
+              The end of all wanting</br>
+              Is all I've been wanting</br>
+              The end of all wanting</br>
+              Is all I've been wanting</br>
+              And that's just the way that I feel</br>
+            </p>
+          </div>
+        </div>
       </li>
+
+
       <li>
         <figure>
           <img src="img/2.jpg" alt="Several hands holding beer glasses">
@@ -106,15 +129,6 @@
           </figcaption>
         </figure>
         <p>
-          [Verse 1]
-          Well, I don't like talkin’ to myself
-          But someone's gotta say it, hell
-          I mean, things have not been going well
-          This time I think I finally fucked myself
-          You see, the life I live is sickening
-          I spent a decade playing chicken with oblivion
-          Day to day, I'm neck and neck with giving in
-          I’m the same old wreck I've always been
 
           [Chorus]
           And when I see her in the park
@@ -710,8 +724,11 @@
     <![endif]-->
   <script src="" async defer></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/animatedModal.min.js"></script>
+
   <script>
     $(document).ready(function () {
+      $("#demo01").animatedModal();
       // Add smooth scrolling to all links
       $("a").on('click', function (event) {
 
